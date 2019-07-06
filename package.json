@@ -1,0 +1,51 @@
+{
+  "name": "mongoose-express",
+  "version": "1.0.0",
+  "description": "a express + mongoose bootstrap",
+  "main": "main.js",
+  "scripts": {
+    "dev": "nodemon --inspect main.js",
+    "test": "jest --coverage",
+    "test-watch": "jest --watch --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcresnitzky/mongoose-express.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dcresnitzky/mongoose-express/issues"
+  },
+  "homepage": "https://github.com/dcresnitzky/mongoose-express#readme",
+  "author": "Daniel Resnitzky",
+  "license": "ISC",
+  "engines": {
+    "node": ">=12.5.0"
+  },
+  "private": false,
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.16.4",
+    "mongodb": "^3.2.7",
+    "mongoose": "^5.6.3",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.0.0",
+    "eslint": "^6.0.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.1",
+    "supertest": "^4.0.2"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "tests/*",
+      "docs/*"
+    ],
+    "delay": "0"
+  }
+}
